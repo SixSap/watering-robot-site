@@ -1,0 +1,673 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+}
+
+/* Header Navigation */
+header {
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    color: #0891b2;
+}
+
+header nav > div span {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #6b7280;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #0891b2;
+}
+
+header nav ul li:last-child a {
+    background-color: #0891b2;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+header nav ul li:last-child a:hover {
+    background-color: #0e7490;
+}
+
+/* Main Content */
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(to bottom, #f0f9ff, white);
+}
+
+#hero > div:first-child {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #1e293b;
+}
+
+#hero h1 strong {
+    color: #0891b2;
+}
+
+#hero > p {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    color: #64748b;
+    line-height: 1.8;
+}
+
+#hero > div:last-child {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#hero a {
+    padding: 0.875rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+#hero a:first-child {
+    background-color: #0891b2;
+    color: white;
+}
+
+#hero a:first-child:hover {
+    background-color: #0e7490;
+    transform: translateY(-2px);
+}
+
+#hero a:last-child {
+    background-color: white;
+    color: #0891b2;
+    border: 2px solid #0891b2;
+}
+
+#hero a:last-child:hover {
+    background-color: #f0f9ff;
+}
+
+/* Section Headers */
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1e293b;
+}
+
+section > p {
+    text-align: center;
+    color: #64748b;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+/* Why Section - Grid */
+#why > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+#why article {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#why article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+#why article > div {
+    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+    background: #e0f2fe;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#why article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #1e293b;
+}
+
+#why article p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Features Section */
+#features > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+#features article {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+#features article:hover {
+    transform: translateY(-5px);
+}
+
+#features article > div {
+    font-size: 3rem;
+    width: 80px;
+    height: 80px;
+    background: #0891b2;
+    color: white;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+#features article h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    color: #1e293b;
+}
+
+#features article p {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+/* Results Section */
+#results > div:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+#results article {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+#results article:hover {
+    transform: scale(1.05);
+}
+
+#results article > div {
+    width: 80px;
+    height: 80px;
+    border: 6px solid #0891b2;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+}
+
+#results article h3 {
+    font-size: 2.5rem;
+    color: #0891b2;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#results article h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+}
+
+#results article p {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* Future Development */
+#results > article:last-child {
+    background: #f0f9ff;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+#results > article:last-child h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #1e293b;
+}
+
+#results > article:last-child p {
+    color: #64748b;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+footer > div {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1e293b;
+}
+
+footer p {
+    color: #64748b;
+    margin-bottom: 0.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Separator */
+hr {
+    margin: 4rem 0;
+    border: none;
+    border-top: 2px solid #e5e7eb;
+}
+
+/* Login Page */
+#login {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+#login > a {
+    color: #0891b2;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+#login > div {
+    background: white;
+    max-width: 450px;
+    margin: auto;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+#login > div > div:first-child {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#login h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+}
+
+#login > div > p {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 2rem;
+}
+
+#login nav {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+#login nav a {
+    flex: 1;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: #64748b;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: all 0.3s;
+}
+
+#login nav a:first-child {
+    color: #0891b2;
+    border-bottom-color: #0891b2;
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #475569;
+}
+
+#login input {
+    padding: 0.875rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+#login input:focus {
+    outline: none;
+    border-color: #0891b2;
+}
+
+#login button {
+    background-color: #0891b2;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login button:hover {
+    background-color: #0e7490;
+}
+
+/* Control Panel */
+#control-panel {
+    min-height: 100vh;
+    display: flex;
+    background-color: #f5f7fa;
+}
+
+#control-panel aside {
+    width: 250px;
+    background: white;
+    padding: 2rem 1rem;
+    border-right: 1px solid #e5e7eb;
+}
+
+#control-panel aside h4 {
+    color: #64748b;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+#control-panel aside nav ul {
+    list-style: none;
+}
+
+#control-panel aside nav ul li {
+    margin-bottom: 0.5rem;
+}
+
+#control-panel aside nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: #64748b;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+}
+
+#control-panel aside nav ul li:nth-child(2) a {
+    background-color: #e0f2fe;
+    color: #0891b2;
+}
+
+#control-panel aside nav ul li a:hover {
+    background-color: #f1f5f9;
+}
+
+#control-panel > div {
+    flex: 1;
+    padding: 2rem;
+}
+
+#control-panel h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #1e293b;
+}
+
+#control-panel article {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#control-panel article h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+}
+
+#control-panel article > p {
+    color: #64748b;
+    margin-bottom: 1rem;
+}
+
+/* Camera View */
+#control-panel article:first-of-type > div {
+    background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+    border-radius: 0.5rem;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #64748b;
+}
+
+#control-panel article:first-of-type > div > div {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Control Panel Grid */
+#control-panel > div > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Drive Controls */
+#control-panel article:has(button[type="button"]) > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+#control-panel article:has(button[type="button"]) > div > div > div {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#control-panel button {
+    background-color: #0891b2;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#control-panel button:hover {
+    background-color: #0e7490;
+    transform: scale(1.05);
+}
+
+/* Robot Functions */
+#control-panel article:last-of-type > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#control-panel article:last-of-type button {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+
+/* Photo Gallery in Control Panel */
+#control-panel article:nth-last-of-type(1) > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#control-panel figure {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+#control-panel figure > div {
+    background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #0891b2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    #control-panel {
+        flex-direction: column;
+    }
+
+    #control-panel aside {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e5e7eb;
+    }
+}
